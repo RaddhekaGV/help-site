@@ -4,23 +4,24 @@
   <meta charset="UTF-8">
   <title>Help Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- ✅ Use relative path to vue.css -->
+  
+  <!-- ✅ Local CSS (served by GitHub Pages) -->
   <link rel="stylesheet" href="vue.css">
 </head>
 <body>
   <div id="app">Loading...</div>
 
+  <!-- ✅ Docsify config -->
   <script>
     window.$docsify = {
       name: 'Help Center',
       loadSidebar: true,
       subMaxLevel: 2,
-      basePath: '/help-site/'  // tells Docsify to look in this subfolder
+      basePath: '/help-site/'
     };
   </script>
 
-  <!-- ✅ Use relative path to local docsify.min.js -->
+  <!-- ✅ Local Docsify script (not from CDN) -->
   <script src="docsify.min.js"></script>
 </body>
 </html>
