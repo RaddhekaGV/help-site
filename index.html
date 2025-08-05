@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <title>Help Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- ✅ Local CSS (served by GitHub Pages) -->
+
+  <!-- Local Docsify Theme -->
   <link rel="stylesheet" href="vue.css">
 </head>
 <body>
   <div id="app">Loading...</div>
 
-  <!-- ✅ Docsify config -->
+  <!-- Docsify Config -->
   <script>
     window.$docsify = {
       name: 'Help Center',
       loadSidebar: true,
       subMaxLevel: 2,
-      basePath: '/help-site/'
+      basePath: '/help-site/', // ✅ Correct for GitHub Pages
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search...',
+        noData: 'No results!',
+        depth: 2
+      }
     };
   </script>
 
-  <!-- ✅ Local Docsify script (not from CDN) -->
+  <!-- Docsify Plugins and Core -->
+  <script src="docsify-search.min.js"></script>
   <script src="docsify.min.js"></script>
 </body>
 </html>
