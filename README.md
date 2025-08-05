@@ -4,4 +4,4 @@ This is the homepage for your documentation site.
 
 - [FAQ](faq.md)
 - [Troubleshooting](troubleshooting.md)
-
+- [Camera features](features.md)
